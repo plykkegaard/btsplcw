@@ -16,6 +16,16 @@ namespace MartijnHoogendoorn.BizTalk.Wizards.PipeLineComponentWizard.Installatio
 	[RunInstaller(true)]
 	public class CustomActions : Installer
 	{
+        /// <summary>
+        /// Visual Studio buildversions
+        /// </summary>
+	    private enum DeveloperToolsEnum
+	    {
+            Vs2012 = 11,
+            Vs2013 = 12,
+            Vs2015 = 14
+	    }
+
 		/// <summary>
 		/// contains the BizTalk Server [version] installation folder
 		/// </summary>
